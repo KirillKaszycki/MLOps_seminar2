@@ -2,7 +2,7 @@ import yaml
 import logging
 import sys
 
-from dataclasses import dataclass, field
+from dataclasses import field
 from marshmallow_dataclass import class_schema
 
 from feature_params import FeatureParams
@@ -15,7 +15,7 @@ handler = logging.StreamHandler(sys.stdout)
 logger.setLevel(logging.DEBUG)
 logger.addHandler(handler)
 
-PATH = "/Users/kirillkasickij/Desktop/Python/MLOps_seminar_2/pythonProject2/ctr-project/configs/train_config.yaml"
+PATH = "/ctr-project/configs/train_config.yaml"
 
 
 class TrainingPipelineParams:
