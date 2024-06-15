@@ -2,7 +2,7 @@ import yaml
 import logging
 import sys
 
-from dataclasses import dataclass, field
+from dataclasses import field
 from marshmallow_dataclass import class_schema
 
 from feature_params import FeatureParams
@@ -12,10 +12,10 @@ from train_params import TrainingParams
 
 logger = logging.getLogger(__name__)
 handler = logging.StreamHandler(sys.stdout)
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.DEBUG)
 logger.addHandler(handler)
 
-PATH = "../configs/train_config.yaml"
+PATH = "/ctr-project/configs/train_config.yaml"
 
 
 class TrainingPipelineParams:
@@ -33,3 +33,16 @@ class TrainingPipelineParams:
 
 
 TrainingPipelineParamsSchema = class_schema(TrainingPipelineParams)
+
+
+def read_training_pipeline_params(path: str) -> TrainingPipelineParams:
+    with open(path, "r") as input_stream:
+        config_dict = yaml.safe_load(input_stream)
+        schema = TrainingPipelineParamsSchema().load(config_dict)
+        logger.info("Check schema: %s", schema)
+        return schema
+
+
+if __name__ == "__main__":
+    params = read_training_pipeline_params(PATH)
+    logger.debug(f"params: {params}")

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5188171-b579-4dec-9e27-2dc2c4299da4" name="Changes" comment="made a DS template" />
+    <list default="true" id="e5188171-b579-4dec-9e27-2dc2c4299da4" name="Changes" comment="Made the methods read logic">
+      <change afterPath="$PROJECT_DIR$/ctr-project/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctr-project/main_pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctr-project/src/entities/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctr-project/src/data/make_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctr-project/src/data/make_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctr-project/src/features/feature_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctr-project/src/entities/feature_params.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctr-project/src/features/split_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctr-project/src/entities/split_params.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctr-project/src/features/train_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctr-project/src/entities/train_params.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctr-project/src/features/train_pipeline_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctr-project/src/entities/train_pipeline_params.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,16 +30,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "assignee": "KirillKaszycki"
+      &quot;assignee&quot;: &quot;KirillKaszycki&quot;
     }
   ],
-  "lastFilter": {
-    "assignee": "KirillKaszycki"
+  &quot;lastFilter&quot;: {
+    &quot;assignee&quot;: &quot;KirillKaszycki&quot;
   }
-}]]></component>
+}</component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
@@ -67,9 +77,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2ePsLup1mUtNQqQleBxpHwCDxkV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -78,6 +88,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.main.executor": "Run",
+    "Python.train_pipeline_params.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "seminar2-ctr-project",
@@ -95,10 +107,11 @@
       <recent name="$PROJECT_DIR$/ctr-project/data/raw" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ctr-project/src/entities" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.train_pipeline_params">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProject2" />
       <option name="ENV_FILES" value="" />
@@ -122,6 +135,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="train_pipeline_params" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ctr-project/src/features" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ctr-project/src/entities/train_pipeline_params.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.train_pipeline_params" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -139,6 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711817495897</updated>
       <workItem from="1711817497284" duration="3937000" />
+      <workItem from="1712507244020" duration="1848000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -164,7 +206,31 @@
       <option name="project" value="LOCAL" />
       <updated>1711821341381</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="made a DS template">
+      <option name="closed" value="true" />
+      <created>1712507252099</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712507252099</updated>
+    </task>
+    <task id="LOCAL-00005" summary="made a DS template">
+      <option name="closed" value="true" />
+      <created>1712507260000</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712507260000</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Made the methods read logic">
+      <option name="closed" value="true" />
+      <created>1712507839829</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712507839829</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +262,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="made a DS template" />
-    <option name="LAST_COMMIT_MESSAGE" value="made a DS template" />
+    <MESSAGE value="Made the methods read logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made the methods read logic" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pythonProject2$main.coverage" NAME="main Coverage Results" MODIFIED="1712507721668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject2$train_pipeline_params.coverage" NAME="train_pipeline_params Coverage Results" MODIFIED="1712507798143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ctr-project/src/features" />
   </component>
 </project>
