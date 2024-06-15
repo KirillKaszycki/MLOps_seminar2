@@ -1,1 +1,0 @@
-#MLOps seminar 2
